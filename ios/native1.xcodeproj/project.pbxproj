@@ -14,6 +14,14 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-native1-native1Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-native1-native1Tests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		A70BEB352A02F8B600A748AE /* NearbyCoreAdapter in Frameworks */ = {isa = PBXBuildFile; productRef = A70BEB342A02F8B600A748AE /* NearbyCoreAdapter */; };
+		A70BEB3B2A02F9EC00A748AE /* NearbyConnections in Frameworks */ = {isa = PBXBuildFile; productRef = A70BEB3A2A02F9EC00A748AE /* NearbyConnections */; };
+		A75489202A016301003B4567 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754891F2A016301003B4567 /* Model.swift */; };
+		A79F01412A017B9200380D60 /* GoogleNearbyMessagesBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = A79F01402A017B9100380D60 /* GoogleNearbyMessagesBridge.m */; };
+		A7ACD0042A07EABA0084AB8A /* Herald.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7ACD0002A07E9990084AB8A /* Herald.framework */; };
+		A7ACD0052A07EABA0084AB8A /* Herald.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A7ACD0002A07E9990084AB8A /* Herald.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A7ACD00F2A08E11E0084AB8A /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ACD00E2A08E11E0084AB8A /* Logger.swift */; };
+		A7ACD0132A08E5FA0084AB8A /* AutomatedTestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ACD0122A08E5FA0084AB8A /* AutomatedTestClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +32,35 @@
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = native1;
 		};
+		A7ACCFFF2A07E9990084AB8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7ACCFFA2A07E9980084AB8A /* Herald.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B637EF50251E55E60072D238;
+			remoteInfo = Herald;
+		};
+		A7ACD0012A07E9990084AB8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7ACCFFA2A07E9980084AB8A /* Herald.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B650151B25229D480070F774;
+			remoteInfo = HeraldTests;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A7ACD0062A07EABA0084AB8A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A7ACD0052A07EABA0084AB8A /* Herald.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		00E356EE1AD99517003FC87E /* native1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = native1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +79,13 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-native1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-native1.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = native1/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-native1-native1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-native1-native1Tests.release.xcconfig"; path = "Target Support Files/Pods-native1-native1Tests/Pods-native1-native1Tests.release.xcconfig"; sourceTree = "<group>"; };
+		A70BEB322A02F84C00A748AE /* nearby */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = nearby; path = ../../nearby; sourceTree = "<group>"; };
+		A754891E2A016300003B4567 /* native1-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "native1-Bridging-Header.h"; sourceTree = "<group>"; };
+		A754891F2A016301003B4567 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		A79F01402A017B9100380D60 /* GoogleNearbyMessagesBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoogleNearbyMessagesBridge.m; sourceTree = "<group>"; };
+		A7ACCFFA2A07E9980084AB8A /* Herald.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Herald.xcodeproj; path = Herald/Herald.xcodeproj; sourceTree = "<group>"; };
+		A7ACD00E2A08E11E0084AB8A /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		A7ACD0122A08E5FA0084AB8A /* AutomatedTestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomatedTestClient.swift; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -59,7 +102,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7ACD0042A07EABA0084AB8A /* Herald.framework in Frameworks */,
+				A70BEB352A02F8B600A748AE /* NearbyCoreAdapter in Frameworks */,
 				0C80B921A6F3F58F76C31292 /* libPods-native1.a in Frameworks */,
+				A70BEB3B2A02F9EC00A748AE /* NearbyConnections in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +138,11 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				A754891F2A016301003B4567 /* Model.swift */,
+				A7ACD00E2A08E11E0084AB8A /* Logger.swift */,
+				A7ACD0122A08E5FA0084AB8A /* AutomatedTestClient.swift */,
+				A754891E2A016300003B4567 /* native1-Bridging-Header.h */,
+				A79F01402A017B9100380D60 /* GoogleNearbyMessagesBridge.m */,
 			);
 			name = native1;
 			sourceTree = "<group>";
@@ -116,6 +167,8 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				A7ACCFFA2A07E9980084AB8A /* Herald.xcodeproj */,
+				A70BEB2C2A02F1C800A748AE /* Packages */,
 				13B07FAE1A68108700A75B9A /* native1 */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* native1Tests */,
@@ -133,6 +186,23 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* native1.app */,
 				00E356EE1AD99517003FC87E /* native1Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A70BEB2C2A02F1C800A748AE /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				A70BEB322A02F84C00A748AE /* nearby */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		A7ACCFFB2A07E9980084AB8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7ACD0002A07E9990084AB8A /* Herald.framework */,
+				A7ACD0022A07E9990084AB8A /* HeraldTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,12 +254,17 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
 				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				A7ACD0062A07EABA0084AB8A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = native1;
+			packageProductDependencies = (
+				A70BEB342A02F8B600A748AE /* NearbyCoreAdapter */,
+				A70BEB3A2A02F9EC00A748AE /* NearbyConnections */,
+			);
 			productName = native1;
 			productReference = 13B07F961A680F5B00A75B9A /* native1.app */;
 			productType = "com.apple.product-type.application";
@@ -207,7 +282,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
@@ -220,8 +295,17 @@
 				Base,
 			);
 			mainGroup = 83CBB9F61A601CBA00E9B192;
+			packageReferences = (
+				A70BEB332A02F8B600A748AE /* XCRemoteSwiftPackageReference "nearby" */,
+			);
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A7ACCFFB2A07E9980084AB8A /* Products */;
+					ProjectRef = A7ACCFFA2A07E9980084AB8A /* Herald.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* native1 */,
@@ -229,6 +313,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A7ACD0002A07E9990084AB8A /* Herald.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Herald.framework;
+			remoteRef = A7ACCFFF2A07E9990084AB8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A7ACD0022A07E9990084AB8A /* HeraldTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = HeraldTests.xctest;
+			remoteRef = A7ACD0012A07E9990084AB8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		00E356EC1AD99517003FC87E /* Resources */ = {
@@ -412,8 +513,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7ACD00F2A08E11E0084AB8A /* Logger.swift in Sources */,
+				A7ACD0132A08E5FA0084AB8A /* AutomatedTestClient.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				A79F01412A017B9200380D60 /* GoogleNearbyMessagesBridge.m in Sources */,
+				A75489202A016301003B4567 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +537,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-native1-native1Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -459,6 +565,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-native1-native1Tests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = native1Tests/Info.plist;
@@ -486,8 +593,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U3KBLLT33M;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = native1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -497,8 +606,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.google.nearby.iOS-Example";
 				PRODUCT_NAME = native1;
+				SWIFT_OBJC_BRIDGING_HEADER = "native1-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -512,7 +622,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U3KBLLT33M;
 				INFOPLIST_FILE = native1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -522,8 +634,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.google.nearby.iOS-Example";
 				PRODUCT_NAME = native1;
+				SWIFT_OBJC_BRIDGING_HEADER = "native1-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -562,7 +675,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -596,6 +709,7 @@
 					"-DFOLLY_MOBILE=1",
 					"-DFOLLY_USE_LIBCPP=1",
 				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -633,7 +747,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -659,6 +773,7 @@
 					"-DFOLLY_MOBILE=1",
 					"-DFOLLY_USE_LIBCPP=1",
 				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -695,6 +810,29 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A70BEB332A02F8B600A748AE /* XCRemoteSwiftPackageReference "nearby" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/nearby";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A70BEB342A02F8B600A748AE /* NearbyCoreAdapter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A70BEB332A02F8B600A748AE /* XCRemoteSwiftPackageReference "nearby" */;
+			productName = NearbyCoreAdapter;
+		};
+		A70BEB3A2A02F9EC00A748AE /* NearbyConnections */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NearbyConnections;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
 }

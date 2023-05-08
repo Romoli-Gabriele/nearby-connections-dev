@@ -12,14 +12,11 @@ import Nearby from './Nearby';
 import {getDeviceName} from 'react-native-device-info';
 
 const App = () => {
+  
   const [deviceName, setDeviceName] = useState('devicename');
   const [devices, setDevices] = useState([]);
   const [isRunning, setIsRunning] = useState(false);
   const [startDate, setStartDate] = useState(null);
-
-  useEffect(() => {
-    Nearby.isActive().then(res => setIsRunning(res));
-  }, []);
 
   useEffect(() => {
     getDeviceName().then(setDeviceName);
@@ -30,9 +27,9 @@ const App = () => {
         const diff = new Date().getTime() - (startDate || new Date()).getTime();
 
         console.log(
-          `[${deviceName}]: messaggio ricevuto dal dispositivo "${event.message}"`,
+          event
         );
-        setDevices(d => [...d, event.message + ' - ' + diff / 1000]);
+        setDevices(d => [...d, event]);
       },
       // MESSAGE LOST
       event => {
@@ -50,7 +47,7 @@ const App = () => {
   }, [startDate, deviceName]);
 
   function onPressStart() {
-    Nearby.start(deviceName);
+    Nearby.start("codice1213");
     setStartDate(new Date());
   }
 
@@ -83,7 +80,7 @@ const App = () => {
       <Button
         title="send (solo per test)"
         onPress={() => {
-          NativeModules.MyNativeModule.send('active screen');
+          //NativeModules.MyNativeModule.send('active screen');
         }}
       />
 
